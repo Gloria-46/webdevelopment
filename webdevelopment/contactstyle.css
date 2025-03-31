@@ -1,0 +1,114 @@
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+body::before {
+    content: '';
+    top: 20%;
+    left: 0;
+    position: absolute;
+    background-image: url('Website Images/seetalogo.jpg');
+    width: 100%;
+    height: 1400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.1;
+    z-index: -1;
+}
+#location{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 4em;
+    font-weight: 535;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+#distance {
+    font-size: 2.1em;
+    margin-top: -20px;
+}
+
+#message {
+    font-size: 1.9em;
+}
+
+legend {
+    font-size: 1.8em;
+    padding-bottom: 14px;
+    background: rgba(126, 98, 96, 0);
+    text-transform: uppercase;
+}
+
+.filed {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(126, 98, 96, 0.404);
+    border-left: 0.4cap solid rgb(78, 3, 148);
+    border-top: 0.4cap solid rgb(78, 3, 148);
+    border-right: 0.1cap solid rgb(78, 3, 148);
+    border-bottom: 0.1cap solid rgb(78, 3, 148);
+}
+
+label{
+    background-color: transparent;
+    line-height: 2em;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+    display: block;
+    font-weight: 450;
+}
+
+input,textarea, select {
+    width: 70%;
+    margin-top: -20px;
+    padding-bottom: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 0.1cap solid rgb(78, 3, 148);
+    margin-left: 2rem;
+    height: 2.1rem;
+    margin-bottom: 10px;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: rgb(68, 54, 117);
+    outline: none;
+    box-shadow: 0 0 5px rgba(79, 39, 189, 0.5);
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgb(78, 3, 148);
+    opacity: 0.7;
+}
+
+button {
+    background: rgb(78, 3, 148);
+    color: rgb(255, 215, 215);
+    border-radius: 5px;
+    height: 60px;
+}
+.press {
+    bottom: 15.1%;
+}
+
+.dark-mode input, .dark-mode textarea, .dark-mode select {
+    color: rgb(228, 224, 218);
+    border-bottom: 0.1cap solid aliceblue;
+}
+
+.dark-mode input::placeholder, .dark-mode textarea::placeholder {
+    color: aliceblue;
+}
+
+.dark-mode input:focus, .dark-mode textarea:focus, .dark-mode select:focus {
+    border-color: rgb(109, 187, 255);
+    box-shadow: 0 0 5px rgba(109, 187, 255, 0.445);
+}
