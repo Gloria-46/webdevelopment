@@ -1,0 +1,250 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - Seeta High School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="academicsstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script defer src="scriptt.js"></script>
+    <script defer src="accordion.js"></script>
+    <script defer src="dynamic.js"></script>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><p>SEETA HIGH SCHOOL- A CAMPUS</p></li>
+            <div id="grid">
+            <li><a href="index.html" class="nah">Home</a></li>
+            <li><a href="about.html" class="nah">About Us</a></li>
+            <li><a href="academics.html" class="nah">Academics</a></li>
+            <li><a href="news.html" class="nah">News & Events</a></li>
+            <li><a href="gallery.html" class="nah">Gallery</a></li>
+            <li><a href="contact.html" class="nah">Contact Us</a></li>
+            <li><a href="form.html" class="nah">Application Form</a></li>
+            </div>
+        </ul>
+    </nav>
+</header>
+<div class="accordion">
+    <div class="accordion-item">
+        <div class="accordion-header">Subjects</div>
+        <div class="accordion-content">
+            <p>We offer a wide variety of subjects in various fields.</p>
+            <div class="nested-accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">Sciences</div>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Physics</li>
+                            <li>Mathematics</li>
+                            <li>Chemistry</li>
+                            <li>Biology</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Arts & Humanities</div>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>History</li>
+                            <li>Divinity</li>
+                            <li>Geography</li>
+                            <li>Literature</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Business & ICT</div>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Economics</li>
+                            <li>Entrepreneurship</li>
+                            <li>Commerce</li>
+                            <li>Computer Studies</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Languages</div>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>English</li>
+                            <li>French</li>
+                            <li>Kiswahili</li>
+                            <li>Luganda</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">Co-Curricular Activities</div>
+        <div class="accordion-content">
+            <p>Our students participate in activities that exercise their minds and 
+                supplement the knowledge they acquire in the classroom.
+            </p>
+            <div class="nested-accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">Clubs</div>
+                    <div class="accordion-content">
+                        <div class="nested-accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-header">Debate and Public Speaking Club</div>
+                                <div class="accordion-content">
+                                    <p>This club has participated in champions and represented the school, 
+                                        the district, the country and most recently the continent in various competitions.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">Scouting and Red Cross Clubs</div>
+                                <div class="accordion-content">
+                                    <p>This club has equipped its members with the finest survival skills and fast-thinking abilities.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">STEM and Robotics Clubs</div>
+                                <div class="accordion-content">
+                                    <p>These clubs train our youngminds keep up with the fast-evolving tech world.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">Music, Dance and Drama Club</div>
+                                <div class="accordion-content">
+                                    <p>This club trains dancers and actors in the school. They prepare and manage a Concert and Talent Show 
+                                        every year.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">Academics Circulars</div>
+        <div class="accordion-content">
+            <ul>
+                <li><a href="assets/circular1.pdf" target="_blank">Term 1 Circular</a></li>
+                <li><a href="assets/circular2.pdf" target="_blank">Examination Guidelines</a></li>
+                <li><a href="assets/circular3.pdf" target="_blank">School Calendar 2025</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">Wall of Fame</div>
+        <div class="accordion-content">
+            <div class="fame">
+                <img src="images/top-student.jpg" alt="Top Student">
+                <p><strong>John Doe</strong> - Best UACE Student 2024</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Departments & Teachers (Dynamic Table) -->
+<div id="Departments" class="tab-content">
+    <h2>Academic Departments & Teachers</h2>
+    <table id="dynamic">
+        <thead>
+            <tr>
+                <th>Department</th>
+                <th>Head of Department</th>
+                <th>Subjects</th>
+                <th>Teachers</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Science</td>
+                <td rowspan="3">Mr. James Okello</td>
+                <td>Physics</td>
+                <td>David Kato</td>
+            </tr>
+            <tr>
+                <td>Chemistry</td>
+                <td>Sarah Namugera</td>
+            </tr>
+            <tr>
+                <td>Biology</td>
+                <td>Grace Tumwine</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Humanities</td>
+                <td rowspan="3">Mrs. Rose Kiggundu</td>
+                <td>History</td>
+                <td>Paul Ssekyanzi</td>
+            </tr>
+            <tr>
+                <td>Geography</td>
+                <td>Anne Mugisha</td>
+            </tr>
+            <tr>
+                <td>Literature</td>
+                <td>Ms. Brenda Nansubuga</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Business & ICT</td>
+                <td rowspan="3">Mr. Patrick Lubega</td>
+                <td>Commerce</td>
+                <td>Joan Kizito</td>
+            </tr>
+            <tr>
+                <td>Entrepreneurship</td>
+                <td>Henry Mulindwa</td>
+            </tr>
+            <tr>
+                <td>Computer Studies</td>
+                <td>Stella Nabatanzi</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="function-buttons">
+        <button onclick="addRow()">Add Department</button>
+        <button onclick="addSubject()">Add Subject</button>
+        <button onclick="addTeacher()">Add Teacher</button>
+    </div>
+</div>
+
+<button class="press" id="darkModeToggle">&#9788;</button>
+    <footer class="footer">
+        <div class="tts">
+        <div id="tt4">
+        <div><button class="call" ><a href="tel:+256 742954755">CALL US</a></button></div>
+        <div id="socials"><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook" aria-hidden="true"></i> </a></div>
+        <div id="socials"><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x" aria-hidden="true"></i></a></div>
+        <div id="socials"><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></div>
+        </div>
+        <div class="footer-text">
+        <p>PRIVACY POLICY</p>
+        <p>TERMS AND CONDITIONS</p>
+        <p>SCHOOL POLICY</p>
+        <p><a href="index.html">HOME</a></p>
+        <p><a href="about.html">ABOUT US</a></p>
+        <p><a href="#">ACADEMICS</a></p>
+        <p><a href="#">NEWS & EVENTS</a></p>
+        <p><a href="gallery.html">LIFE IN PICTURES</a></p>
+        <p><a href="contact.html">CONTACT</a></p>
+        </div>
+        <div class="marquee">
+            <div class="smooth">
+            <span>&copy2025 @seetaschools. </span>
+            <span>Welcome to Seeta High School- A Campus</span>
+            <span>Admissions for all classes are open.</span>
+            <span><a href="form.html">Apply Here Now.</a></span>
+            <span>&copy2025 @seetaschools.</span>
+            <span>Welcome to Seeta High School- A Campus</span>
+            <span>Admissions for all classes are open.</span>
+            <span><a href="form.html">Apply Here Now.</a></span>
+        </div>
+        </div>
+    </footer>
+
+</body>
+</html>

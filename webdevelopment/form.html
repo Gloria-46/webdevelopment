@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contactstyle.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form- A Campus</title>
+    <header>
+        <nav>
+            <ul>
+                <li><p>SEETA HIGH SCHOOL-A CAMPUS</p></li>
+                <div id="grid">
+                <li><a href="index.html" class="nah">Home</a></li>
+                <li><a href="about.html" class="nah">About Us</a></li>
+                <li><a href="academics.html" class="nah">Academics</a></li>
+                <li><a href="news.html" class="nah">News & Events</a></li>
+                <li><a href="gallery.html" class="nah">Gallery</a></li>
+                <li><a href="contact.html" class="nah">Contact Us</a></li>
+                <li><a href="form.html" class="nah">Application Form</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        function showMesssage() {
+            alert("Your form has been submitted.")
+        }
+    </script>
+</head>
+<body>
+    <div class="fifi">
+        <section class="field">
+            <section id="top">
+            <p id="title">APPLICATION FORM</p>
+            </section>
+        <form action="#">
+            <fieldset class="set">
+            <legend>Personal Information</legend>
+            <label for="sname">Surname:</label>
+            <input type="text" class="sname" placeholder="KASIRYE" required>
+            <br>
+            <label for="othernames">Other Names:</label>
+            <input type="text" class="othernames" placeholder="MUSTAFA KAVUMA" required>
+            <br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" class="dob" name="dob" required>
+            <br>
+            <label for="age" >Age:</label>
+            <input type="number" name="age" class="age" required>
+            <br>
+            <label for="email" >E-mail (optional):</label>
+            <input type="email" name="email" class="email" >
+            <br>
+            <label for="gender">Gender:</label>
+            <label for="male">Male</label>
+            <input type="radio" value="male" name="gender">
+            <br>
+            <label for="female">Female</label>
+            <input type="radio" value="female" name="gender">
+            </fieldset>
+            <fieldset class="set">
+            <legend>Education Details</legend>
+            <label for="former">Former School:</label>
+            <input type="text" class="former" required >
+            <br>
+            <label for="enrolmentclass">Class you wish to enroll for:</label>
+            <select name="enrolment" id="enrolment">
+                <optgroup label="O-LEVEL">
+                <option value="senior1">SENIOR 1</option>
+                <option value="senior2">SENIOR 2</option>
+                <option value="senior3">SENIOR 3</option>
+                <option value="senior4">SENIOR 4</option>
+                </optgroup>
+                <optgroup label="A-LEVEL">
+                <option value="senior5">SENIOR 5</option>
+                <option value="senior6">SENIOR 6</option>
+                </optgroup>
+            </select>
+            </fieldset>
+            <div>
+                <button class="submit" type="submit" onclick="showMesssage()">SUBMIT</button>
+                <button class="reset" type="reset">RESET</button>
+            </div>
+            <p>By submitting the above information , you confirm to our terms and conditions of service.</p>
+            <p>Ensure that the information submitted is true to the best of your knowledge for false information 
+            submitted will make you liable to whatever punishments are deemed necessary.</p>
+        </form>
+        </section>
+    </div>
+    <button class="press" id="darkModeToggle">&#9788;</button>
+    <footer class="footer">
+        <div class="tts">
+        <div id="tt4">
+        <div><button class="call" ><a href="tel:+256 742954755">CALL US</a></button></div>
+        <div id="socials"><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook" aria-hidden="true"></i> </a></div>
+        <div id="socials"><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x" aria-hidden="true"></i></a></div>
+        <div id="socials"><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></div>
+        </div>
+        <div class="footer-text">
+        <p>PRIVACY POLICY</p>
+        <p>TERMS AND CONDITIONS</p>
+        <p>SCHOOL POLICY</p>
+        <p><a href="index.html">HOME</a></p>
+        <p><a href="about.html">ABOUT US</a></p>
+        <p><a href="#">ACADEMICS</a></p>
+        <p><a href="#">NEWS & EVENTS</a></p>
+        <p><a href="gallery.html">LIFE IN PICTURES</a></p>
+        <p><a href="contact.html">CONTACT</a></p>
+        </div>
+        <div class="marquee">
+            <div class="smooth">
+            <span>&copy2025 @seetaschools. </span>
+            <span>Welcome to Seeta High School- A Campus</span>
+            <span>Admissions for all classes are open.</span>
+            <span><a href="form.html">Apply Here Now.</a></span>
+            <span>&copy2025 @seetaschools.</span>
+            <span>Welcome to Seeta High School- A Campus</span>
+            <span>Admissions for all classes are open.</span>
+            <span><a href="form.html">Apply Here Now.</a></span>
+        </div>
+        </div>
+    </footer>
+    <script src="scriptt.js"></script>
+</body>
+</html>

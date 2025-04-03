@@ -1,0 +1,137 @@
+/*General Style Adjustments*/
+header {
+    position: absolute;
+    top: 4.2%;
+    right: 0;
+    left: 0;
+}
+nav ul {
+    justify-content: space-around;
+}
+#grid {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-left: 10px;
+}
+nav ul li p{
+    text-align: left;
+    margin-left: -50px;
+    margin-top: -5px;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    font-weight: 100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav ul li a{
+    font-size: 1rem;
+}
+body::before {
+    height: 1000px;
+    top: 1%;
+}
+.press{
+    top: 88.5%;
+}
+footer {
+    margin-top: 70px;
+}
+
+/*Accordion Styles*/
+.accordion {
+    width: 100%;
+    max-width: 600px;
+    margin: 100px auto;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.accordion-item {
+    border-bottom: 1px solid #cccccc;
+}
+.accordion-header {
+    background: rgba(78, 3, 148, 0.87);
+    color:  aliceblue;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+.accordion-header:hover {
+    background: rgba(78, 3, 148, 0.788);
+}
+.accordion-content {
+    display: none;
+    padding: 15px;
+    color: aliceblue;
+    font-size: 1.2rem;
+    background: rgba(78, 3, 148, 0.336);
+}
+.accordion-content p, .accordion-content ul li a, .accordion-content ul{
+    animation: fadeIn 0.5s ease-in;
+    text-decoration: none;
+    color: aliceblue;
+}
+.nested-accordion .accordion-header {
+    background: rgba(55, 10, 97, 0.829);
+}
+.nested-accordion .accordion-header:hover {
+    background: rgba(55, 10, 97, 0.788);
+}
+
+/*Table Styles*/
+table {
+    width: 60%;
+    margin-left: 5%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.function-buttons{
+    width: 60%;
+    margin-left: 6%;
+}
+button {
+    background-color: rgba(78, 3, 148, 0.336);
+}
+button:hover {
+    font-family: unset;
+}
+th, td {
+    border: 1px solid rgba(78, 3, 148, 0.87);
+    text-align: left;
+}
+th {
+    background-color: rgba(78, 3, 148, 0.336);
+    color: aliceblue;
+    height: 40px;
+    font-size: larger;
+}
+td {
+    height: 10px;
+    font-size: 1.3rem;
+    color: rgb(78, 3, 148);
+}
+td input {
+    margin-top: -10px;
+    height: 30px;
+    margin-bottom: -10px;
+}
+button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.tabs {
+    position: relative;
+    margin-top: 100px;
+}
+.dark-mode th, .dark-mode td {
+    border: 1px solid rgba(240, 248, 255, 0.856);
+}
+.dark-mode td {
+    color: aliceblue;
+}

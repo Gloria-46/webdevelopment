@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seeta High School- A Campus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallerystyles.css ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script defer src="scriptt.js"></script>
+    <script defer src="lightbox.js"></script>
+    <script defer src="gtry.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><p>SEETA HIGH SCHOOL-A CAMPUS</p></li>
+                <div id="grid">
+                <li><a href="index.html" class="nah">Home</a></li>
+                <li><a href="about.html" class="nah">About Us</a></li>
+                <li><a href="academics.html" class="nah">Academics</a></li>
+                <li><a href="news.html" class="nah">News & Events</a></li>
+                <li><a href="schoollife.html" class="nah">Gallery</a></li>
+                <li><a href="contact.html" class="nah">Contact Us</a></li>
+                <li><a href="form.html" class="nah">Application Form</a></li>
+                </div>
+            </ul>
+        </nav>    
+    </header>
+    <section class="gallery">
+        <div class="album">
+            <div class="cover">
+                <img src="Website Images\image1.webp" data-album="album-images"><!--School life album-->
+                <div class="text-over">
+                    <hr>
+                    School Life
+                </div>
+            </div>
+            <div id="album-images" class="album-images">
+                <img src="Website Images/image2.webp" class="gallery-img" onclick="openLightbox(this.src)">
+                <img src="Website Images/image3.webp" class="gallery-img" onclick="openLightbox(this.src)">
+                <img src="Website Images/image4.webp" class="gallery-img" onclick="openLightbox(this.src)">
+                <img src="Website Images/image5.webp" class="gallery-img" onclick="openLightbox(this.src)">
+                <img src="Website Images/image6.jpg" class="gallery-img" onclick="openLightbox(this.src)">
+                <img src="Website Images/image19.jpg" class="gallery-img" onclick="openLightbox(this.src)">
+                <img src="Website Images/image22.jpg" class="gallery-img" onclick="openLightbox(this.src)">
+            </div>
+        </div>
+        <div class="album">
+            <div class="cover">
+                <img src="Website Images/image26.jpg" data-album="album-images1"></a><!--Extra-Curriculars Album-->
+                <div class="text-over">
+                    <hr>
+                    Extra-Curriculars
+                </div>
+            </div>
+            <div id="album-images1" class="album-images">
+                <img src="Website Images/image7.jpg" class="gallery-img" onclick="openLightbox(this.src)">
+                <img src="Website Images/image8.jpg" class="gallery-img" onclick="openLightbox(this.src)">
+                <img src="Website Images/image9.webp" class="gallery-img" onclick="openLightbox(this.src)">
+                <img src="Website Images/image15.webp" class="gallery-img" onclick="openLightbox(this.src)">
+                <img src="Website Images/image16.webp" class="gallery-img" onclick="openLightbox(this.src)">
+                <img src="Website Images/image17.jpg" class="gallery-img" onclick="openLightbox(this.src)">
+                <img src="Website Images/image18.jpg" class="gallery-img" onclick="openLightbox(this.src)">
+                <img src="Website Images/image20.webp" class="gallery-img" onclick="openLightbox(this.src)">
+                <img src="Website Images/image 21.webp" class="gallery-img" onclick="openLightbox(this.src)">
+                <img src="Website Images/image23.webp" class="gallery-img" onclick="openLightbox(this.src)">
+                <img src="Website Images/image24.webp" class="gallery-img" onclick="openLightbox(this.src)">
+                <img src="Website Images/image25.jpg" class="gallery-img" onclick="openLightbox(this.src)">
+                <img src="Website Images/image27.webp" class="gallery-img" onclick="openLightbox(this.src)">
+                <img src="Website Images/image28.jpg" class="gallery-img" onclick="openLightbox(this.src)">
+            </div>
+        </div>
+        <div class="album">
+            <div class="cover">
+                <img src="Website Images/image23.webp" data-album="album-images2">
+                <div class="text-over">
+                    <hr>
+                    Prayers
+                </div>
+            </div>
+            <div id="album-images2" class="album-images">
+                <img src="Website Images/image12.webp" class="gallery-img" onclick="openLightbox(this.src)">
+                <img src="Website Images/image11.webp" class="gallery-img" onclick="openLightbox(this.src)">
+                <img src="Website Images/image13.webp" class="gallery-img" onclick="openLightbox(this.src)">
+                <img src="Website Images/image23.webp" class="gallery-img" onclick="openLightbox(this.src)">
+            </div>
+        </div>
+
+
+
+        <!--mg src="Website Images\image1.webp" class="gallery-img" onclick="openLightbox(this.src)">
+        <img src="Website Images/image2.webp" class="gallery-img" onclick="openLightbox(this.src)">
+        <img src="Website Images/image14.webp" class="gallery-img" onclick="openLightbox(this.src)">-->
+       
+    </section>
+
+    <div id="lightbox">
+        <span onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img">
+    </div>
+    <button class="press" id="darkModeToggle">&#9788;</button>
+    <footer class="footer">
+        <div class="tts">
+        <div id="tt4">
+        <div><button class="call" ><a href="tel:+256 742954755">CALL US</a></button></div>
+        <div id="socials"><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook" aria-hidden="true"></i> </a></div>
+        <div id="socials"><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x" aria-hidden="true"></i></a></div>
+        <div id="socials"><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></div>
+        </div>
+        <div class="footer-text">
+        <p>PRIVACY POLICY</p>
+        <p>TERMS AND CONDITIONS</p>
+        <p>SCHOOL POLICY</p>
+        <p><a href="index.html">HOME</a></p>
+        <p><a href="about.html">ABOUT US</a></p>
+        <p><a href="#">ACADEMICS</a></p>
+        <p><a href="#">NEWS & EVENTS</a></p>
+        <p><a href="gallery.html">LIFE IN PICTURES</a></p>
+        <p><a href="contact.html">CONTACT</a></p>
+        </div>
+        <div class="marquee">
+            <div class="smooth">
+            <span>&copy2025 @seetaschools. </span>
+            <span>Welcome to Seeta High School- A Campus</span>
+            <span>Admissions for all classes are open.</span>
+            <span><a href="form.html">Apply Here Now.</a></span>
+            <span>&copy2025 @seetaschools.</span>
+            <span>Welcome to Seeta High School- A Campus</span>
+            <span>Admissions for all classes are open.</span>
+            <span><a href="form.html">Apply Here Now.</a></span>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,267 @@
+/*General Style Adjustments*/
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    margin-top: -4px;
+}
+.footer {
+    margin-top: 100px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.press{
+    margin-top: 50px;
+}
+nav ul {
+    justify-content: space-around;
+}
+#grid {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-left: 10px;
+}
+nav ul li p{
+    text-align: left;
+    margin-left: -50px;
+    margin-top: -5px;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    font-weight: 100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav ul li a{
+    font-size: 1rem;
+}
+
+/*Background image*/
+body::before {
+    content: '';
+    top: 10%;
+    left: 0;
+    position: absolute;
+    background-image: url('Website Images/seetalogo.jpg');
+    width: 100%;
+    height: 2400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/*Carousel*/
+.carousel img{
+    width: 101.8%;
+    height: 84vh;
+    margin-left: -8px;
+    object-fit: cover;
+    position: relative;
+    margin-bottom: 50px;
+    animation: zoom 7s ease-in-out;
+    opacity: 0.9;
+}
+.dots {
+    z-index: 10;
+    position: absolute;
+    top: 22.1%;
+    left: 6.8%;
+}
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: rgba(78, 3, 148, 0.418);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+.active {
+    color: rgb(37, 0, 71);
+}
+.prev, .next {
+    background-color: transparent;
+    color: rgb(78, 3, 148);
+}
+.dark-mode .dot {
+    background-color: rgba(240, 248, 255, 0.548);
+}
+.dark-mode .dot.active {
+    background-color: aliceblue;
+}
+.dark-mode .prev, .dark-mode .next {
+    background-color: transparent;
+}
+
+/*Tab*/
+.tab-container button{
+    border-bottom: 0.1cap solid rgb(78, 3, 148);
+    border-right: 0.1cap solid rgb(78, 3, 148);
+    cursor: default;
+    width: 80%;
+    text-align: left;
+    padding-bottom: 1px;
+    line-height: 2em;
+    font-size: 1.3em;
+    font-weight: 549;
+    letter-spacing: 0.07cap;
+    color: rgb(78, 3, 148);
+    padding-left: 4px;
+} 
+.tab-button {
+    box-shadow: none;
+    background-color: transparent;
+}
+.tabs{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.tab-container button:hover, .tab-button.active {
+    opacity: 1;
+    border-color: rgba(241, 13, 13, 0.808);
+    color: rgb(78, 3, 148);
+    font-family: inherit;
+}
+.tab-content {
+    display: none;
+    width: 100%;
+    margin-top: -4px;
+    margin-left: -10px;
+    text-align: left;
+    padding-left: 9px;
+    padding-top: 0px;
+    font-size: large;
+    animation: fadeIn 2s;
+}
+.tab-content.active {
+    display: block;
+}
+.dark-mode .tab-container button {
+    background-color: transparent;
+    color: aliceblue;
+    border-bottom: 0.1cap solid aliceblue;
+    border-right: 0.1cap solid aliceblue;
+}
+.dark-mode .tab-container button:hover, .dark-mode .tab-button.active {
+    opacity: 1;
+    border-color: rgba(5, 9, 247, 0.753);
+    color: aliceblue;
+    font-family: inherit;
+}
+
+/*Core Values*/
+.pillars{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 4em;
+    font-weight: 535;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: rgb(78, 3, 148);
+}
+h5 {
+    font-size: 2em;
+    margin-bottom: -50px;
+    text-align: center;
+    font-weight: 350;
+}
+.container3{
+    margin-top: -50px;
+}
+.dark-mode .pillars{
+    color: aliceblue;
+}
+
+/*Testimonials*/
+.testimonial-cup {
+    width: 85%;
+    margin-top: 3em;    
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 2.6em;
+    font-weight: 100;
+    transition: transform 7s ease-in;
+}
+.testimonials {
+    display: flex;
+    flex-direction: column;
+}
+.testimonial {
+    padding: 20px;
+    margin-left: 100px;
+    text-align: center;
+    display: none;
+    border-left: 0.55cap solid rgba(78, 3, 148, 0.589);
+    height: 450px;
+}
+.testimonial.active{
+    display: block;
+}
+#speech {
+    animation: fadeIn 2.2s, swipeLeft 2s ease-in-out;
+    color: rgb(78, 3, 148);
+}
+#speaker {
+    text-align: right;
+    color: rgb(78, 3, 148);
+    animation: fadeIn 2.7s, swipeLeft 2.5s ease-in-out;
+}
+.dark-mode #speech, .dark-mode #speaker{
+    color: aliceblue;
+}
+.dark-mode .testimonial {
+    border-color: rgba(240, 248, 255, 0.418);
+}
+
+/*Extra Curriculars Styling*/
+.extras{
+    display: flexbox;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+.events {
+    margin-top: -100px;
+    text-align: center;
+    font-size: 1.8em;
+}
+.text-line {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+.text-line::before, .text-line::after {
+    content: "";
+    flex: 1;
+    border-bottom: 0.1cap solid rgb(78, 3, 148);
+}
+.sports {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 0;
+    max-width: 1000px;
+    margin: auto;
+}
+.sports li {
+    padding: 0px;
+    text-align: left;
+    list-style-position: inside;
+    background-color: transparent;
+    font-size: 1.9em;
+}
+.dark-mode .text-line::before, .dark-mode .text-line::after {
+    border-bottom: 0.1cap solid aliceblue;
+}

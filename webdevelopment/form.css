@@ -1,0 +1,82 @@
+/*General Styles Adjustment*/
+footer {
+    margin-left: -10px;
+    margin-top: 100px;
+}
+.press {
+    top: 154%;
+}
+body::before{
+    height: 1450px;
+}
+
+/*Form Adjustment*/
+.field {
+    padding-top: 0px;
+    width: 60%;
+    height: auto;
+    margin-top: 60px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+fieldset {
+    border: 1.5px solid rgb(78, 3, 148);
+}
+form {
+    height: min-content;
+    background-color: rgba(126, 98, 96, 0.404);
+    padding-left: 10px;
+    margin-left: -60px;
+    padding-right: 0px;
+    margin-bottom: -100px;
+    padding-bottom: 10px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#title {
+    padding-top: 28px;
+    text-align: center;
+    color: aliceblue;
+    letter-spacing: 0.2cap;
+    font-size: 1.8rem;
+}
+#top {
+    background-color: rgba(78, 3, 148, 0.918);
+    padding: 0px 0px;
+    height: 80px;
+    margin-top: -30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 108.1%;
+    margin-left: -8.1%;
+}
+legend,label {
+    color: rgb(65, 1, 126);
+}
+label {
+    font-size: 1.4rem;
+    margin-bottom: -9px;
+}
+input, select {
+    height: auto;
+    margin-top: 0px;
+    border-radius: 0px;
+    border: 0.1cap solid rgba(78, 3, 148, 0.473);
+    width: 600px;
+}
+input[type="radio"] {
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    padding: initial;
+    width: 13px;
+}
+.dark-mode input, .dark-mode select {
+    color: rgb(228, 224, 218);
+    border: 0.1cap solid aliceblue;
+}
+.dark-mode label, .dark-mode legend {
+    color: aliceblue;
+}
+.dark-mode fieldset {
+    border-color: aliceblue;
+}
